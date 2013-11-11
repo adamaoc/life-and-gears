@@ -1,0 +1,35 @@
+.fullarticle {
+	h1 {
+		background: rgba(0,0,0,0.8);
+		color: #fff;
+		padding: 20px 10px;
+		margin-bottom: 0;
+	}
+	p {
+		padding-left: 5px;
+		&:first-child {
+			&:first-letter {
+				float: left;
+				font-size: 400%;
+				line-height: 0.85em;
+				font-family: 'Fredericka the Great', cursive !important;
+				margin-right: 0.1em;
+			}
+		}
+	}
+	.heroshot {
+		width: 100%;
+		overflow: hidden;
+		height: 280px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: none;
+	}
+	.article-wrap {
+		padding: 20px 15px;
+		background: #fff;
+		columns: 300px 2;
+		-webkit-columns: 300px 2;
+		-moz-columns:300px 2; /* Firefox */
+	}
+}

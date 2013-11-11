@@ -1,0 +1,26 @@
+body {
+	background: url(http://www.lifeandgears.com/images/77508646_vcm4.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#wrap {
+	background-image: url(http://lifeandgears.com/images/730_BG_topleft.png);
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+.navbar {
+	background: rgba(255,255,255,0.9);
+}
+.navbar-default .navbar-brand {
+	color: #333;
+	font-size: 20px;
+}
+
+a {
+	color: #E6B267;
+	&:hover {
+		color: #854F00;
+	}
+}
