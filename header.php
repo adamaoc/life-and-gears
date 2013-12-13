@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?> class="no-js">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
 
-    <title>Grunt Startup Project w/ Bootstrap3</title>
+    <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
 
-    <meta name="description" content="UI-Less & Performant Transitions & Animations">
+	<link href="//www.google-analytics.com" rel="dns-prefetch">
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/favicon.ico" rel="shortcut icon">
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-
-    <!-- Individual module CSS files here -->
-    <!-- Should we combine or not combine? -->
+    <?php wp_head(); ?>
+    
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/css/style.css">
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <!-- Wrap all page content here -->
     <div id="wrap">
 
@@ -31,17 +32,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Life and Gears</a>
+            <a class="navbar-brand" href="/"><?php bloginfo('name'); ?></a>
           </div>
           <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="#about">News</a></li>
-              <li><a href="#contact">Reviews</a></li>
-              <li><a href="#contact">Galleries</a></li>
-              <li><a href="#contact">Podcasts</a></li>
-              <li><a href="#contact">About</a></li>
-            </ul>
+            <?php wp_nav_menu( array('theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav') ); ?>
           </div><!--/.nav-collapse -->
         </div>
       </div>

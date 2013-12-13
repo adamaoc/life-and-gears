@@ -1,14 +1,14 @@
 body {
-	background: url(http://www.lifeandgears.com/images/77508646_vcm4.png) no-repeat center center fixed; 
+	background: url(/wp-content/themes/life-and-gears/assets/img/main-bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 #wrap {
-	background-image: url(http://lifeandgears.com/images/730_BG_topleft.png);
+	/*background-image: url(http://lifeandgears.com/images/730_BG_topleft.png);
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 50%;*/
 }
 .navbar {
 	background: rgba(255,255,255,0.9);
@@ -16,6 +16,11 @@ body {
 .navbar-default .navbar-brand {
 	color: #333;
 	font-size: 20px;
+}
+.navbar-nav {
+	.current_page_item {
+		@extend .active;
+	}
 }
 
 a {
