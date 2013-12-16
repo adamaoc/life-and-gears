@@ -29,8 +29,26 @@
 	.article-wrap {
 		padding: 20px 15px;
 		background: #fff;
-		columns: 300px 2;
-		-webkit-columns: 300px 2;
-		-moz-columns:300px 2; /* Firefox */
+		columns: 350px 2;
+		-webkit-columns: 330px 2;
+		-moz-columns:350px 2; /* Firefox */
+		
+		h1, h2, h3, h4, h5 {
+			text-align: left;
+		}
+
+		blockquote, pre {
+			display: inline-block;
+			width: 90%;
+		}
+
+		.gallery {
+			display: inline-block;
+			dl {
+				float: left;
+				padding-right: 1em;
+				padding-bottom: 1em;
+			}
+		}
 	}
 }
