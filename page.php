@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 	
 	<!-- section -->
-	<section role="main">
-	
+	<section role="main" class="content-wrap">
+		PAGE!
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	
 		<!-- article -->
